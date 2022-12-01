@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/img/favicon2.png" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logo"><a class="menu" href="index.html"><img
+                        src="https://www.cesurformacion.com/uploads/media/logo-small/09/19-cesur-fp.svg?v=6-0" /></a>
+            </div>
+            <div class = "menu">
+                <nav>
+                    <a href="index.html">Inicio</a>
+                    <a href="utilidades.html">Utilidades</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="cuerpo">
+            <div class="utilidades2">
+                <div class="texto">
+
+                    <h1>Calculadora de categoría segun año de nacimiento</h1>
+
+                    <p> El fútbol base se divide en diferentes categorías, las cuales dependerán de la edad del jugador,
+                        siendo la máxima los diecinueve años. Sin embargo, en algunos países esta edad se alarga hasta
+                        los veintitrés años, es el caso de Estados Unidos. En España dependerá de la división en la que
+                        jueguen los equipos. Después de sobrepasar la edad límite, los futbolistas únicamente podrán
+                        jugar en la categoría absoluta.</p>
+
+                    <h3><br>Para calcular su categoría, ingrese su año de nacimiento.</h3>
+
+                    <div class="datosIMC">
+
+                        <div action="" method="get">
+                            Año de nacimiento <input type="text" name="año" id="año" placeholder="">
+
+                            <button onclick="calcularCategoria()">Calcular</button>
+
+
+                        </div>
+
+                        <br>Resultado: <input id="resultado" disabled>
+                    </div>
+
+                    <div class="sidebar">
+                        <ul>
+                            <li><a class="textoSidebar" style="text-decoration:none; color:white;" href="imc.html">Calculadora de IMC</a></li>
+                            <li><a class="textoSidebar" style="text-decoration:none; color:white;" href="fcm.html">Calculadora de FCM</a></li>
+                            <li><a class="textoSidebar" style="text-decoration:none; color:white;" href="categoria.html">Calculadora de categoría</a></li>
+                            <li><a class="textoSidebar" style="text-decoration:none; color:white;" href="horario.html">Horario de la asociación</a></li>
+                        </ul>
+                    </div>
+
+                    <script src="calcularCategoria.js"></script>
+
+                    <table class="tablaIMC">
+                        <tbody>
+                            <tr>
+                                <td class="strongtext"><strong>Categorías segun año de nacimiento</strong></td>
+                            </tr>
+                            <tr id="type1">
+                                <td class="AltRow1">-Micros (menos de 6 años)</td>
+
+                            </tr>
+                            <tr id="type2">
+                                <td class="AltRow1">-Prebenjamin (menos de 8 años) </td>
+
+                            </tr>
+                            <tr id="type3">
+                                <td class="AltRow1">-Benjamin (menos de 10 años)</td>
+
+                            </tr>
+                            <tr id="type4">
+                                <td class="AltRow1">-Alevin (menos de 12 años)</td>
+
+                            </tr>
+                            <tr id="type5">
+                                <td class="AltRow1">-Infantil (menos de 14 años)</td>
+
+                            </tr>
+                            <tr id="type6">
+                                <td class="AltRow1">-Cadete (menos de 16 años) </td>
+
+                            </tr>
+                            <tr id="type7">
+                                <td class="AltRow1">-Juvenil (menos de 19 años) </td>
+
+                            </tr>
+                            <tr id="type8">
+                                <td class="AltRow1">-Senior (menos de 40 años) </td>
+
+                            </tr>
+                            <tr id="type9">
+                                <td class="AltRow1">-Veterano (de 40 para arriba) </td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <footer>
+            <p>Copyright 2022©</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>

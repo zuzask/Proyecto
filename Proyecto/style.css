@@ -1,0 +1,230 @@
+body {
+  margin: 0;
+  font-size: 15pt;
+}
+
+header {
+  background-color: #002f87;
+  width: 100%;
+  margin-bottom: 20px;
+  height: 100px;
+  position: fixed;
+  top: 0;
+}
+
+.wrapper {
+  margin: auto;
+  width: 100%;
+  
+}
+
+header .logo {
+  float: left;
+  padding: 15px 20px;
+}
+
+header nav {
+  float: right;
+}
+
+header nav a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 30px;
+  margin-right: 20px;
+  font-size: 20pt;
+}
+
+.main{
+  display: flex;
+}
+
+.cuerpo1 {
+  display: flex;
+  margin-top: 100px;
+  
+}
+.cuerpo {
+  margin-top: 100px;
+  width: 100%;
+  
+}
+
+.utilidades {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.utilidades2{
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom:700px;
+  margin-top: 0px;
+}
+
+.texto {
+  
+  display: flex;
+  flex-direction: column;
+}
+
+.textoSidebar:hover{
+  color:rgb(241, 193, 34) !important;
+}
+
+
+.imagenOlimpic{
+  align-self: center;
+  margin-top: 50px;
+}
+
+.mapa{
+  align-self: center;
+  margin-top: 50px;
+}
+
+.main h1 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 40px;
+   margin-bottom: 30px;
+}
+
+main nav a {
+
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding: 30px 20px;
+  font-size: 20pt;
+}
+
+
+
+* {
+  margin: 0px;
+  padding: 0px 0px;
+}
+
+.sidebar {
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  background: #151719;
+  left: 0px;
+}
+
+.sidebar ul li {
+  color: white;
+  list-style: none;
+  padding: 15px 10px;
+  border-bottom: 1px solid rgb(241, 193, 34);
+  text-align: left;
+}
+
+.datosIMC{
+  margin-top: 40px;
+}
+
+.datosIMC input{
+  height: 30px;
+  width: 90px;
+}
+
+.datosIMC select{
+  height: 30px;
+  width: 90px;
+}
+
+.datosIMC button{
+  height: 25px;
+  width: 80px;
+}
+
+.tablaIMC{
+  margin-top: 40px;
+
+}
+
+.footer{
+  background-color: #002f87;
+  width: 100%;
+  height: 150px;
+  position: relative;
+  margin-bottom:0px;
+  
+  
+}
+
+.footer p{
+  position: absolute;
+  top: 40%;
+  left: 47%;
+  color:white;
+  
+  
+}
+
+.botonHorario button{
+  height: 40px;
+  width: 80px;
+  margin:20px;
+}
+
+
+.menu a{
+  position: relative;
+}
+
+.menu a::before{
+  content: '';
+  position:absolute;
+  bottom:0;
+  left:0;
+  width: 100%;
+  height: 2px;
+  background:linear-gradient(to right, rgb(243, 212, 111), rgb(238, 202, 83), rgb(241, 193, 34));
+  z-index: 1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-in-out;
+  
+}
+
+.menu a:hover::before{
+  transform: scaleX(1);
+}
+
+.menu[data-animation="to-left"] a::before{
+  transform-origin: right;
+}
+
+.menu[data-animation="center"] a::before{
+  transform-origin: center;
+}
+
+.menu[data-animation="bonus"] a::before {
+  transform-origin: right;
+  transition: transform 0.5s ease-in-out;
+}
+ 
+.menu[data-animation="bonus"] a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+  transition-timing-function: cubic-bezier(0.2, 1, 0.82, 0.94);
+}
+
+
+
+
+
+
+
+
+
+
+
+

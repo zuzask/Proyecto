@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/img/favicon2.png" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logo"><a class="menu" href="index.html"><img
+                        src="https://www.cesurformacion.com/uploads/media/logo-small/09/19-cesur-fp.svg?v=6-0" /></a>
+            </div>
+            <div class = "menu">
+                <nav>
+                    <a href="index.html">Inicio</a>
+                    <a href="utilidades.html">Utilidades</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="cuerpo">
+            <div class="utilidades2">
+                <div class="texto">
+
+                    <h1>Calculadora de frecuencia cardiaca máxima (FCM)</h1>
+
+                    <p> La frecuencia cardíacac máxima (FCM) es muy útil en entrenamiento, sobre todo para planificar
+                        intensidades de trabajo. Su cálculo teórico es muy simple y si contamos con un pulsómetro nos
+                        puede ser muy útil para entrenar de forma más acertada. Pero no es lo mismo la FCM para un
+                        sedentario que para un entrenado, ni para un hombre y una mujer, por eso vamos a ver diferentes
+                        formas de calcular la frecuencia cardíaca máxima</p>
+
+                    <h3><br>Para calcular su frecuencia cardiaca máxima, ingrese edad y sexo.</h3>
+
+                    <div class="datosIMC">
+
+                        <div action="" method="get">
+                            Edad <input type="text" name="edad" id="edad" >
+
+                            Sexo <select name="sexo" id="sexo">
+                                    <option value="hombre">Hombre</option>
+                                    <option value="mujer">Mujer</option>
+                                 </select>
+
+                            <button onclick="calcularFCM()">Calcular</button>
+
+
+                        </div>
+
+                        <br>Resultado: <input id="resultado" disabled>
+                    </div>
+
+                    <div class="sidebar">
+                        <ul>
+                            <li><a class="textoSidebar" style="text-decoration:none; color:white;" href="imc.html">Calculadora de IMC</a></li>
+                            <li><a class="textoSidebar" style="text-decoration:none; color:white;" href="fcm.html">Calculadora de FCM</a></li>
+                            <li><a class="textoSidebar" style="text-decoration:none; color:white;" href="categoria.html">Calculadora de categoría</a></li>
+                            <li><a class="textoSidebar" style="text-decoration:none; color:white;" href="horario.html">Horario de la asociación</a></li>
+                        </ul>
+                    </div>
+
+                    <script src="calcularFCM.js"></script>
+
+                    <table class="tablaIMC">
+                        <tbody>
+                            <tr>
+                                <td class="strongtext"><strong>Valores frecuencia cardiaca</strong></td>
+                            </tr>
+                            <tr id="type1">
+                                <td class="AltRow1"><br>-Zona de recuperación (60%-70%)</td>
+                            </tr>
+                            <tr id="type2">
+                                <td class="AltRow1">-Zona aeróbica (70%-80%)</td>
+                            </tr>
+                            <tr id="type3">
+                                <td class="AltRow1">-Zona anaeróbica (80%-90%)</td>
+                            </tr>
+                            <tr id="type4">
+                                <td class="AltRow1">-Línea roja (90%-100%)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div style="display:block" class="footer">
+        <footer>
+            <p>Copyright 2022©</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>

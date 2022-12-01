@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/img/favicon2.png" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logo"><a class="menu" href="index.html"><img
+                        src="https://www.cesurformacion.com/uploads/media/logo-small/09/19-cesur-fp.svg?v=6-0" /></a>
+            </div>
+            <div class = "menu">
+                <nav>
+                    <a href="index.html">Inicio</a>
+                    <a href="utilidades.html">Utilidades</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="cuerpo">
+            <div class="utilidades2">
+                <div class="texto">
+
+                    <h1>Horario de nuestras instalaciones</h1>
+
+                    <p> Nuestro horario se divide en mañana y tarde, proporcionando de esta manera flexibilidad a la
+                        hora de elegir nuestras actividades, lo que permitirá una mayor variedad entre los usuarios. </p>
+
+                    <h3><br>Disponemos de horario de mañana y tarde.</h3>
+
+                    <div class="botonHorario">
+
+                        <div action="" method="get">
+
+                            <button onclick="horarioMañana()">Horario mañana</button>
+                            <button onclick="horarioTarde()">Horario tarde</button>
+
+
+                        </div>
+
+                        <br><p>Horario: 
+                        <span id="resultado"></span></p>
+                    </div>
+
+                    <div class="sidebar">
+                        <ul>
+                            <li><a class="textoSidebar" style="text-decoration:none; color:white;" href="imc.html">Calculadora de IMC</a></li>
+                            <li><a class="textoSidebar" style="text-decoration:none; color:white;" href="fcm.html">Calculadora de FCM</a></li>
+                            <li><a class="textoSidebar" style="text-decoration:none; color:white;" href="categoria.html">Calculadora de categoría</a></li>
+                            <li><a class="textoSidebar" style="text-decoration:none; color:white;" href="horario.html">Horario de la asociación</a></li>
+                        </ul>
+                    </div>
+
+                    <script src="horario.js"></script>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <div class="footer">
+        <footer>
+            <p>Copyright 2022©</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>

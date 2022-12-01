@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/img/favicon2.png" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logo"><a class="menu" href="index.html"><img
+                        src="https://www.cesurformacion.com/uploads/media/logo-small/09/19-cesur-fp.svg?v=6-0" /></a>
+            </div>
+            <div class = "menu">
+                <nav>
+                    <a href="index.html">Inicio</a>
+                    <a href="utilidades.html">Utilidades</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="cuerpo">
+            <div class="utilidades2">
+                <div class="texto">
+
+                    <h1>Calculadora del índice de masa corporal (IMC)</h1>
+
+                    <p> Una medida de la obesidad se determina mediante el índice de masa corporal (IMC), que se calcula
+                        dividiendo los kilogramos de peso por el cuadrado de la estatura en metros (IMC = peso (kg)/
+                        [estatura (m)]2. Según el Instituto Nacional del Corazón, los Pulmones y la Sangre de los
+                        Estados Unidos (NHLBI), el sobrepeso se define como un IMC de más de 25. Se considera que una
+                        persona es obesa si su IMC es superior a 30. Usted puede determinar su IMC con la calculadora
+                        que se encuentra a continuación. Con la cifra del IMC puede averiguar su composición corporal en
+                        la tabla que aparece debajo de la calculadora.</p>
+
+                    <h3><br>Para calcular su índice de masa corporal, ingrese su estatura y peso.</h3>
+
+                    <div class="datosIMC">
+
+                        <div action="" method="get">
+                            Estatura <input type="text" name="estatura" id="estatura" placeholder="Centímetros">
+                           
+                            Peso <input type="text" name="peso" id="peso" placeholder="kilográmos">
+
+                            <button onclick="calcularIMC()">Calcular</button>
+
+
+                        </div>
+
+                        <br>Resultado: <input id="resultado" disabled>
+                    </div>
+                    <div class="sidebar">
+                        <ul>
+                            <li><a class="textoSidebar" style="text-decoration:none; color:white;" href="imc.html">Calculadora de IMC</a></li>
+                            <li><a class="textoSidebar" style="text-decoration:none; color:white;" href="fcm.html">Calculadora de FCM</a></li>
+                            <li><a class="textoSidebar" style="text-decoration:none; color:white;" href="categoria.html">Calculadora de categoría</a></li>
+                            <li><a class="textoSidebar" style="text-decoration:none; color:white;" href="horario.html">Horario de la asociación</a></li>
+                        </ul>
+                    </div>
+
+                   <script src="calcularImc.js"></script>
+
+                    <table class="tablaIMC">
+                        <tbody>
+                            <tr >
+                                <td class="strongtext"><strong>Composición corporal</strong></td>
+                                <td class="strongtext"><strong>Índice de masa corporal (IMC)</strong></td>
+                            </tr>
+                            <tr id="type1">
+                                <td class="AltRow1">-Infrapeso(delgadez severa</td>
+                                <td class="AltRow1">Menos de 16</td>
+                            </tr>
+                            <tr id="type2">
+                                <td class="AltRow1">-Infrapeso(delgadez moderada)</td>
+                                <td class="AltRow1">16.00 - 16.99</td>
+                            </tr>
+                            <tr id="type3">
+                                <td class="AltRow1">-Infrapeso (delgadez aceptable)</td>
+                                <td class="AltRow1">17.00 - 18.49</td>
+                            </tr>
+                            <tr id="type4">
+                                <td class="AltRow1">-Peso normal</td>
+                                <td class="AltRow1">18.50 - 24.99</td>
+                            </tr>
+                            <tr id="type5">
+                                <td class="AltRow1">-Sobrepeso</td>
+                                <td class="AltRow1">25.00 - 29.99</td>
+                            </tr>
+                            <tr id="type6">
+                                <td class="AltRow1">-Obeso (Tipo I)</td>
+                                <td class="AltRow1">30.00 - 34.99</td>
+                            </tr>
+                            <tr id="type7">
+                                <td class="AltRow1">-Obeso (Tipo II)</td>
+                                <td class="AltRow1">35.00 - 40.00</td>
+                            </tr>
+                            <tr id="type8">
+                                <td class="AltRow1">-Obeso (Tipo III)</td>
+                                <td class="AltRow1">>40.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+            
+        
+        </div>
+        
+    </div>
+
+    <div class="footer">
+        <footer>
+            <p>Copyright 2022©</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
